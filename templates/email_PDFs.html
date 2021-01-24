@@ -1,0 +1,58 @@
+{% extends 'index.html' %}
+
+{% block head %}
+<title>Create Job</title>
+<style>
+
+</style>
+{% endblock %}
+{% block body %}
+<br><br>
+
+{% if email_sent %}
+<fieldset>
+	<h4>The PDF has been sent to these recipients: </h4>
+	<br><br>
+	{% for email in recipients %}
+	<h6>{{email}}</h6>
+	{% endfor %}
+	<br><br>
+	<h5>You can see this in output history</h5>
+<br><br>
+<form action="/Email_PDFs" method="GET">
+	<input type="submit" value="Create New Job" class="btn btn-secondary ml-3">
+</form>
+</fieldset>
+{% else %}
+<form action="/Email_PDFs" method="POST">
+	<fieldset>
+	    <legend>New Job</legend>
+	    <p>
+	    <label for="jobName" class = 'required'>Job Name</label><br>
+	    <textarea name = "jobName" rows = "1" cols = "75" required></textarea>
+	    </p>
+	    <p>
+	    <label for="jobDescription">Job Description</label><br>
+	    <textarea name = "jobDescription" rows = "1" cols = "75"></textarea>
+	    </p>
+	    <hr class="solid">
+	    <p>
+	    <label for="emailSubject">Email Subject</label><br>
+	    <textarea name = "emailSubject" rows = "1" cols = "75"></textarea>
+	    </p>
+	    <p>
+	    <label for="emailBody">Email Body</label><br>
+	    <textarea name = "emailBody" rows = "3" cols = "75"></textarea>
+	    </p>
+		<p>
+	    <label for="recipients" class = 'required'>Recipient Emails</label><br>
+	    <textarea name = "recipients" rows = "10" cols = "75" placeholder="Put space between each email address" required></textarea>
+	    </p>
+	    <hr class="solid">
+	    <p><input type="submit" name = "Send" value="Send" class="btn btn-secondary ml-3">
+	    	<input type="submit" name = "Save" value= "Save" class="btn btn-secondary ml-3">
+	    </p>
+	</fieldset>
+</form>
+{% endif %}
+{% endblock %}
