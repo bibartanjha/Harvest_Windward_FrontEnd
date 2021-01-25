@@ -11,7 +11,7 @@ This application will only work on computer 10.0.25 with username harvestparsing
 
 ## How to access
 
-This application is already downloaded on to this computer. To access the application, open your terminal and copy-paste this (make sure you also copy the entire block, even the empty lines):
+This application is already downloaded on to this computer. To access the application, open your terminal and copy-paste this (make sure you copy the entire block, even the empty lines at the bottom):
 ```
 cd Harvest_Windward_FrontEnd
 python main.py
