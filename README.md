@@ -11,28 +11,10 @@ This application will only work on computer 10.0.25 with username harvestparsing
 
 ## Installation
 
-This application is already downloaded on to this computer. To access the application, open your terminal and copy-paste this (make sure you also copy the 3rd and 4th empty lines:
+This application is already downloaded on to this computer. To access the application, open your terminal and copy-paste this (make sure you also copy the entire block, even the empty lines):
 ```
 cd Harvest_Windward_FrontEnd
 python main.py
 
 
 ```
-
-## Usage
-
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
