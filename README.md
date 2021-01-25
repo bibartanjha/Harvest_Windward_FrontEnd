@@ -19,5 +19,5 @@ python main.py
 
 ```
 
-Then, type in this URL on your browser: http://127.0.0.1:8082/
+Then, enter this URL on your browser to access the application: http://127.0.0.1:8082/
 
