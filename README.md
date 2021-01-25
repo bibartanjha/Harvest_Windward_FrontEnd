@@ -9,7 +9,7 @@ As of now, you will need to use the terminal to access the application.
 
 This application will only work on computer 10.0.25 with username harvestparsing/administrator. To use this application on a different computer, you will need to install the Windward RESTful API.
 
-## Installation
+## How to access
 
 This application is already downloaded on to this computer. To access the application, open your terminal and copy-paste this (make sure you also copy the entire block, even the empty lines):
 ```
@@ -18,3 +18,6 @@ python main.py
 
 
 ```
+
+Then, type in this URL on your browser: http://127.0.0.1:8082/
+
