@@ -129,8 +129,8 @@ def email (form):
 	return recipients
 
 @app.route('/More_Info', methods=['GET', 'POST'])
-def Output_History():
-	return render_template('output_history.html')
+def More_Info():
+	return render_template('more_info.html')
 
 if __name__ == '__main__':
 	app.run(host='127.0.0.1', port=8082, debug=True)
